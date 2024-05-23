@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/titulo.css">
+  <link rel="stylesheet" href="./styles/basecalculadora.css">
+  <link rel="stylesheet" href="./styles/inputs.css">
+  <link rel="stylesheet" href="./styles/parte-inputs.css">
+  <link rel="stylesheet" href="./styles/botoes.css">
+  <link rel="stylesheet" href="./styles/parte-outputs.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/repsonsividade.css">
+  <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+  <header>
+    <div class="destaque">
+      <div class="tituloPagina">ENGENHARIA E MODELAGEM</div>
+      <div  class="tituloPagina">DE REQUISITOS</div>
+    </div>
+  </header>
+  <section class="calculadora">
+    <div class="baseCalculadora container">
+      <div class="ladoInputs">
+        <div class="ladoInputsConteudo">
+          <div class="conta">
+            <div class="conta-informacao-alerta">
+            <p class="info" id="info-conta">Conta</p>
+            <p class="alerta" id="alerta-conta"> </p>
+            </div>
+          </div>
+          <div class="input-container">  
+            <div class="placeholder-icon">              
+            </div>
+            <input class="inputs" type="text" id="input-bill" placeholder="0,00">   
+          </div>
+
+          <div class="bemaqui">
+            <div class="depoisaqui">
+              <div class="gorjeta">
+                <div class="gorjeta-informacao-alerta">
+                  <p class="info" id="select-tip"> % Gorjeta</p>
+                  <p class="alerta" id="alerta-custom"> </p>
+                </div>
+              </div>
+              <div class="container div-botoes">
+
+                <div class="container input-container">  
+                  <div class="placeholder-icon">              
+                  </div>
+                  <input class="input-custom" class="inputs" type="text" placeholder="%"> 
+                </div>
+              </div>
+            </div>             
+            <div class="depoisaqui">         
+              <div class="gorjeta">
+                <div class="gorjeta-informacao-alerta">
+                  <p class="info" id="select-tip">Serviço extra</p>
+                  <p class="alerta" id="alerta-custom"> </p>
+                </div>
+              </div>
+              <div class="container input-container">  
+                <div class="placeholder-icon">              
+                </div>
+                <input class="input-custom" class="inputs" type="text" id="valor-extra" placeholder="0,00">   
+              </div>
+            </div>
+          </div>
+
+          <div class="people">
+            <div class="people-informacao-alerta">
+            <p class="info" id="info-pessoas">Nº de Pessoas</p>
+            <p class="alerta" id="alerta-pessoas"> </p>
+            </div>
+          </div>
+          <div class="input-container">   
+            <div class="placeholder-icon">              
+            </div>
+            <input class="input-custom"  class="inputs" type="text" id="input-people" placeholder="0">
+          </div>                  
+
+          <div class="div-reset">
+            <div class="base-reset">
+              <button id="calculateButton">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ladoResultado"> 
+        <div class="ladoResultadoConteudo container">
+          <div class="quantidadeGorjeta">
+            <div class="etiqueta">
+              <p class="etiqueta-oque"> Gorjeta</p>
+              <p class="etiqueta-pessoa">/ pessoa</p>
+            </div>
+            <div class="saida">
+              <output class="outputs" id="saida-tip-amount" value="$ 0,00">$ 0,00</output>
+            </div>
+          </div>
+
+          <div class="quantidadePessoa">
+            <div class="etiqueta">
+              <p class="etiqueta-oque"> Total</p>
+              <p class="etiqueta-pessoa">/ pessoa</p>
+            </div>
+            <div class="saida">
+              <output class="outputs" id="saida-total" value="$ 0,00">$ 0,00</output>
+            </div>
+          </div>  
+
+          <div class="valor-total">
+              <p class="etiqueta-oque"> Total Compra </p>
+              <p class="etiqueta-pessoa">/ Total</p>            
+            <div class="saida">
+                <output class="outputs" id="total-compra" value="$ 0,00">$ 0,00</output>
+            </div>
+          </div>                   
+
+          <div class="div-reset">
+            <div class="base-reset">
+              <button class="botao-reset" id="reset">RESET</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+    Universidade de Tecnologia UniSenai, grupo: Keila - Samantha - Elliz</a>
+</footer>
+  <script src="main.js"></script>
+</html>

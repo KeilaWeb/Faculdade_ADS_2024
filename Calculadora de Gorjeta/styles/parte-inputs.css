@@ -1,0 +1,20 @@
+.ladoInputsConteudo{
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    font-weight: 700;
+    color: var(--CorLetras);
+    margin-bottom: 1rem;
+   }
+
+   .input-container {
+    position: relative;
+    display: flex;
+  }
+
+ 
+
+  #alerta-conta, #alerta-pessoas, #alerta-custom{
+    color: red;
+  }

@@ -1,0 +1,105 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to bottom, #9440e4, #43057c);
+    color: #fff;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 50px;
+}
+
+#letter-display {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    width: 250px; /* Defina o tamanho desejado para todos os botões */
+    height: 45px; /* Defina a mesma altura dos botões */
+    padding: 0px;
+    margin: 6px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(99, 99, 99, 0.315);
+    cursor: pointer;
+}
+
+.categoria:hover {
+    background-color: #17ff36ea;
+    color: white;
+}
+
+#players-section, #categories-section {
+    margin-bottom: 20px;
+}
+#categories-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#player-name {
+    width: 250px; /* Defina o tamanho desejado para todos os botões */
+    height: 20px; /* Defina a mesma altura dos botões */
+    padding: 14px;
+    margin: 16px;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: -2px -2px -6px rgba(39, 39, 39, 0.315);
+}
+
+.player {
+    width: 80px; /* Defina o tamanho desejado para todos os botões */
+    height: 50px; /* Defina a mesma altura dos botões */
+    font-size: 14px;
+    color: #43057c;
+    font-weight: bold;
+    background-color: rgb(255, 251, 19);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(39, 39, 39, 0.315);
+    cursor: pointer;
+}
+
+.start{
+    width: 250px; /* Defina o tamanho desejado para todos os botões */
+    height: 50px; /* Defina a mesma altura dos botões */
+    font-size: 24px;
+    color: #43057c;
+    font-weight: bold;
+    background-color: rgb(255, 251, 19);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(39, 39, 39, 0.315);
+    cursor: pointer;
+}
+
+#player-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#player-list li {
+    margin-bottom: 5px;
+}
+
+#timer {
+    font-size: 20px;
+}
